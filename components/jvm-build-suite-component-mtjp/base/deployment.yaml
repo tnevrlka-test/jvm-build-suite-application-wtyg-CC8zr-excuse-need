@@ -23,7 +23,7 @@ spec:
         app.kubernetes.io/instance: jvm-build-suite-component-mtjp
     spec:
       containers:
-      - image: quay.io/rh_ee_tnevrlka/test-images:1e258f2de24347de91994ddc562f2fde
+      - image: quay.io/rh_ee_tnevrlka/test-images@sha256:b30126e17f0d708ed2b31fd8d7c5964f060e1dc5925249fe7be93551629a22aa
         imagePullPolicy: Always
         livenessProbe:
           httpGet:
