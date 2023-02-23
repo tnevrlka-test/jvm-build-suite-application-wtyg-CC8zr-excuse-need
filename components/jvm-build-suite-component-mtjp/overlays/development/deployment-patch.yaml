@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: jvm-build-suite-component-mtjp
+  namespace: jvm-build-vfdr-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/rh_ee_tnevrlka/test-images@sha256:b30126e17f0d708ed2b31fd8d7c5964f060e1dc5925249fe7be93551629a22aa
+        name: container-image
+        resources: {}
+status: {}
